@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aliceblue;"> 
+    <center>
+   
+    
+    <h3 style="color: darkred; font-size:50px;"> PORUR </h3>
+    <h3> Pavithra.S  (25017175)</h3>
+    <img src="{% static 'PORUR MAP.png' %}" usemap="#map">
+    <map name="map">
+    <area shape="rect" coords="30,75,170,120" href="{% url 'restaurant' %}" title="SKY THRU ROOFTOP RESTAURANT ">
+    <area shape="rect" coords="230,100,320,160" href="{% url 'dental'%}" title="DENTAL CARE" >
+    <area shape="rect" coords="526,175,660,200" href="{% url 'school'%}" title="EURO PRESCHOOL">
+    <area shape="rect" coords="926,320,1078,353" href="{% url 'showroom'%}" title="THE CHENNAI MOBILES">
+    <area shape="rect" coords="660,230,790,264" href="{% url 'hospital'%}" title=" SRI RAMACHANDRA HOSPITAL(block G)">
+    </map>
+    
+</center>
+</body>
+</html>
